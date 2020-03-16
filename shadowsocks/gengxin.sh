@@ -24,7 +24,7 @@ mimahang=`cat ${file} | grep "method"`
 len=`expr length $mimahang`
 # 密码长度-1 使用cut获取密码
 len=$[$len-1]
-jiujiami=`echo $hang | cut -c11-$len`
+jiujiami=`echo $mimahang | cut -c11-$len`
 
 # 利用数组实现一个随机加密
 jiami_array=(rc4-md5 salsa20 chacha20 chacha20-ietf aes-256-cfb aes-192-cfb aes-128-cfb aes-256-ctr aes-192-ctr aes-128-ctr bf-cfb camellia-128-cfb camellia-192-cfb camellia-256-cfb aes-128-gcm aes-192-gcm aes-256-gcm chacha20-ietf-poly1305)
