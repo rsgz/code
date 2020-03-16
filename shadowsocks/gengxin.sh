@@ -19,6 +19,12 @@ jiuduan=$(cat /etc/kcp-config.json|grep 'target'|cut -c25-29)
 # 端口替换
 sed -i 's/'$jiuduan'/'$xinduan'/g' /etc/kcp-config.json
 
+# 自启动防火墙并且重载 使设置生效######################
+systemctl start firewalld  &&
+systemctl enable firewalld.service  &&
+firewall-cmd --zone=public --add-port=${xinduan}/tcp --permanent  &&
+firewall-cmd --reload  &&
+
 # 修改加密方式################################################
 mimahang=`cat ${file} | grep "method"`
 len=`expr length $mimahang`
@@ -33,12 +39,6 @@ suiji=$(rand 0 $[$shuzulen-1])
 # 数组下标作为随机数 实现随机数组元素的引用 继而实现随机加密方式
 suijijiami=${jiami_array[$suiji]}
 sed -i 's/'$jiujiami'/'$suijijiami'/g' /etc/ss-config.json
-
-# 自启动防火墙并且重载 使设置生效######################
-systemctl start firewalld  &&
-systemctl enable firewalld.service  &&
-firewall-cmd --zone=public --add-port=${xinduan}/tcp --permanent  &&
-firewall-cmd --reload  &&
 
 # 开启ss#################
 systemctl start shadowsocks-server  &&
