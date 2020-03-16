@@ -12,7 +12,7 @@ function rand(){
 }
 
 # 随机端口1024-65000之间
-xinduan=$(rand 1024 65000)
+xinduan=$(rand 10000 30000)
 sed -i 's/'$jiuduan'/'$xinduan'/g' /etc/ss-config.json
 jiuduan=$(cat /etc/kcp-config.json|grep 'target'|cut -c25-29)
 
