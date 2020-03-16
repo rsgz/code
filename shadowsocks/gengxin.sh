@@ -1,6 +1,6 @@
 # 清除大部分端口
-firewall-cmd --zone=public --remove-port=${xinduan}/tcp --permanent  &&
-firewall-cmd --reload  &&
+# firewall-cmd --zone=public --remove-port=${xinduan}/tcp --permanent  &&
+# firewall-cmd --reload  &&
 
 # 修改端口
 file="/etc/ss-config.json"  
