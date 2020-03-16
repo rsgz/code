@@ -1,5 +1,5 @@
 # 清除大部分端口
-firewall-cmd --zone=public --remove-port=1024-65000/tcp --permanent &&
+firewall-cmd --zone=public --remove-port=${xinduan}/tcp --permanent  &&
 firewall-cmd --reload  &&
 
 # 修改端口
