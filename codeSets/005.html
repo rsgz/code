@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>替换字符串</title>
+<script>
+function Tihuan(){
+	var yuan = document.getElementById("yuan").value;
+	var xin = document.getElementById("xin").value;
+    var lao = document.getElementById("lao").value;
+	lao=lao.replace("/","\\/");//让老字符串的格式写对了 往正则里面带
+    
+	var jieguo='<script>\n\
+function Tihuan(){\n\
+    var str = "'+yuan+'";\n\
+    str = str.replace(/'+lao+'/igm,"'+xin+'");\n\
+    document.getElementById("demo").innerHTML=str;\n\
+}\n\
+&#x3C;&#x2F;script>\n\
+<button onclick="Tihuan()">点我&#x3C;&#x2F;button><br/>\n\
+<textarea id="demo" rows="10" cols="60">&#x3C;&#x2F;textarea>\n\
+'
+	
+	document.getElementById("demo").innerHTML=jieguo;
+}
+</script>
+</head>
+	
+<body>
+<h1 style="text-align:center;">替换字符串</h1>
+原来的字符串: <input id="yuan" type="text" name="原来字符串" value=""><br/>
+用这个(xin): <input id="xin" type="text" name="xin" value=""><br/>
+替换这个(lao): <input id="lao" type="text" name="lao" value=""><br/>
+<button type="button" onclick="Tihuan()">生成正则</button><br/>
+<textarea id="demo" rows="10" cols="60"></textarea>
+</body>
+</html>
