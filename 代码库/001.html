@@ -1,29 +1,20 @@
+<!-- 输出12生肖 -->
 <!DOCTYPE html>
 <html>
-<head> 
-<meta charset="utf-8"> 
-<title>菜鸟教程(runoob.com)</title> 
+<head>
+<meta charset="utf-8">
+<title>输出12生肖</title>
+<script>
+function outZodiac(){
+	var carname = "子鼠 丑牛 寅虎 卯兔 辰龙 巳蛇 午马 未羊 申猴 酉鸡 戌狗 亥猪";
+	document.getElementById("demo").innerHTML=carname;
+}
+</script>
 </head>
 <body>
- 
-<div id="container" style="width:500px">
- 
-<div id="header" style="background-color:#FFA500;">
-<h1 style="margin-bottom:0;">主要的网页标题</h1></div>
- 
-<div id="menu" style="background-color:#FFD700;height:200px;width:100px;float:left;">
-<b>菜单</b><br>
-HTML<br>
-CSS<br>
-JavaScript</div>
- 
-<div id="content" style="background-color:#EEEEEE;height:200px;width:400px;float:left;">
-内容在这里</div>
- 
-<div id="footer" style="background-color:#FFA500;clear:both;text-align:center;">
-版权 © runoob.com</div>
- 
-</div>
- 
+<h1>输出12生肖</h1>
+<textarea id="demo" rows="10" cols="60">
+</textarea><br/>
+<button type="button" onclick="outZodiac()">输出生肖</button>
 </body>
 </html>
