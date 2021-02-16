@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>&#x3C;&#x2F;与&#x2F;&#x3E;转化为实体</title>
+<script>
+function zhuanhua(){
+	var yaunwen = document.getElementById("yuanwen").value	
+	var txt = yaunwen.replace(/<\//gi,"&#x26;&#x23;&#x78;&#x33;&#x43;&#x3B;&#x26;&#x23;&#x78;&#x32;&#x46;&#x3B;");
+    var txt = txt.replace(/\/>/gi,"&#x26;&#x23;&#x78;&#x32;&#x46;&#x3B;&#x26;&#x23;&#x78;&#x33;&#x45;&#x3B;");
+    document.getElementById("jieguo").innerHTML = txt;
+}
+</script>
+</head>
+	
+<body>
+<h1 style="text-align:center;">&#x3C;&#x2F;与&#x2F;&#x3E;转化为实体</h1>
+<span>&#x3C;&#x2F;→→→→&#x26;&#x23;&#x78;&#x33;&#x43;&#x3B;&#x26;&#x23;&#x78;&#x32;&#x46;&#x3B;</span>
+<span>&#x3C;&#x2F;→→→→&#x26;&#x23;&#x78;&#x33;&#x43;&#x3B;&#x26;&#x23;&#x78;&#x32;&#x46;&#x3B;</span>
+<textarea id="yuanwen" rows="10" cols="70"></textarea><br/>
+<button type="button" onclick="zhuanhua()">转化</button><br/>
+<textarea id="jieguo" rows="10" cols="70"></textarea><br/>
+</body>
+</html>
