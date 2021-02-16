@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>代码输出变量替换</title>
+</head>
+<body>
+
+<script>
+function Tihuan(){
+    var yuanwen=document.getElementById("yuanwen").value;
+	var lao=document.getElementById("lao").value;
+	var str1='"+';
+    var str2='+"';
+	var bianliang=str1+lao+str2;
+	var re=new RegExp(lao,'g')
+	yuanwen = yuanwen.replace(re,bianliang);
+	
+    document.getElementById("jieguo").innerHTML=yuanwen;
+	
+}
+</script>
+<h1>代码输出变量替换</h1>
+<textarea id="yuanwen" rows="8" cols="60"></textarea><br/>
+替换<input id="lao" type="text" name="lao" value="">
+为变量<input id="bianliang" type="text" name="bianliang" value="">
+<br/>
+<button onclick="Tihuan()">执行</button><br/>
+<textarea id="jieguo" rows="8" cols="60"></textarea>
+
+
+</body>
+</html>
