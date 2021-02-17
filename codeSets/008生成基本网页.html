@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>生成基本网页</title>
+<script>
+function shengcheng(){
+    var wangyeming = document.getElementById("wangyeming").value;
+    var hanshuming = document.getElementById("hanshuming").value;
+    var str = '\
+<!DOCTYPE html>\n\
+<html>\n\
+<head>\n\
+<meta charset="utf-8">\n\
+<title>'+wangyeming+'</title>\n\
+<script>\n\
+function '+hanshuming+'(){\n\
+    var wangyeming = document.getElementById("wangyeming).value;\n\
+    \n\
+    document.getElementById("jieguo").innerHTML=str;\n\
+}\n\
+<&#x2F;script>\n\
+</head>\n\
+<body>\n\
+<h1>'+wangyeming+'</h1>\n\
+网页名: <input id="-" type="text" name="网页名" value=""><br>\n\
+<textarea id="jieguo" rows="10" cols="70"></textarea><br/>\n\
+<button type="button" onclick="'+hanshuming+'()">生成</button><br/>\n\
+</body>\n\
+</html>\n\
+';
+    document.getElementById("jieguo").innerHTML=str;
+}
+</script>
+</head>
+<body>
+<h1>生成基本网页</h1>
+网页名: <input id="wangyeming" type="text" name="网页名" value=""><br>
+函数名: <input id="hanshuming" type="text" name="函数名" value=""><br>
+<button type="button" onclick="shengcheng()">生成</button><br/>
+<textarea id="jieguo" rows="10" cols="70"></textarea><br/>
+</body>
+</html>
