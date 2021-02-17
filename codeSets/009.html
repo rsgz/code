@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>id延伸</title>
+<script>
+function 函数(id){
+  var str = '函数:\n\
+<script>\n\
+function outDemo(){\n\
+    var str = document.getElementById("'+id+'").value;\n\
+\n\
+    document.getElementById("jieguo").innerHTML=str;\n\
+}\n\
+<&#x2F;script>';
+  return str;
+}
+
+function 输入框(id){
+    str = '\
+姓名: <input id="'+id+'" type="text" name="'+id+'" value=""><br/>';
+  return str;
+}
+  
+function id延伸(){
+    var id = document.getElementById("id").value; 
+    
+    document.getElementById("jieguo").innerHTML=函数(id);
+    document.getElementById("jieguo").innerHTML=输入框(id);
+}
+</script>
+</head>
+<body>
+<h1>id延伸</h1>
+id: <input id="id" type="text" name="id" value=""><br>
+<textarea id="jieguo" rows="10" cols="70"></textarea><br/>
+<button type="button" onclick="id延伸()">生成</button><br/>
+</body>
+</html>
