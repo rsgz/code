@@ -9,15 +9,15 @@
 <script>
 function Tihuan(){
     var yuanwen=document.getElementById("yuanwen").value;
-	var lao=document.getElementById("lao").value;
-	var str1='"+';
-    var str2='+"';
-	var bianliang=str1+lao+str2;
-	var re=new RegExp(lao,'g')
-	yuanwen = yuanwen.replace(re,bianliang);
-	
+    var lao=document.getElementById("lao").value;
+    var str1='\'+';
+    var str2='+\'';
+    var bianliang=str1+lao+str2;
+    var re=new RegExp(lao,'g')
+    yuanwen = yuanwen.replace(re,bianliang);
+    
     document.getElementById("jieguo").innerHTML=yuanwen;
-	
+    
 }
 </script>
 <h1>代码输出变量替换</h1>
