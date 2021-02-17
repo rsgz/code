@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<script>
+function displayDate(){
+    var str = document.getElementById("yuanwen").value;
+    var str=str.split('\n');
+    str=str.join('\\n\\\n');
+    str='str = \'\\\n'+str+"\'";
+    document.getElementById("jieguo").innerHTML=str;
+}
+</script>
+</head>
+<body>
+
+<textarea id="yuanwen" rows="10" cols="70"></textarea><br/>
+<button type="button" onclick="displayDate()">替换</button><br/>
+<textarea id="jieguo" rows="10" cols="70"></textarea><br/>
+
+</body>
+</html>
