@@ -9,12 +9,13 @@ function displayDate(){
     var str=str.split('\n');
     str=str.join('\\n\\\n');
     str='str = \'\\\n'+str+"\'";
+    str = str.replace(/<\/script>/igm,"<&#x26;&#x23;&#x78;&#x32;&#x46;&#x3B;script>");
     document.getElementById("jieguo").innerHTML=str;
 }
 </script>
 </head>
 <body>
-
+<h1>xxx==>str='xxx\n\';</h1>
 <textarea id="yuanwen" rows="10" cols="70"></textarea><br/>
 <button type="button" onclick="displayDate()">替换</button><br/>
 <textarea id="jieguo" rows="10" cols="70"></textarea><br/>
