@@ -1,0 +1,21 @@
+body{
+    margin:0px;
+}
+.header{
+    height:38px;
+    background-color:black;
+}
+
+.header .menu{
+    float:left;
+    color:white;
+    height:38px;
+    line-height:38px;
+}
+
+.header .account{
+    float:right;
+    color:white;
+    height:38px;
+    line-height:38px;
+}
