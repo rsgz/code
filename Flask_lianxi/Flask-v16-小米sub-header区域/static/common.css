@@ -1,0 +1,82 @@
+body{
+    margin:0px;
+}
+
+.header{
+    height:40px;
+    background-color:#333;
+}
+
+.header a{
+    color:#b0b0b0;
+    line-height:40px;
+    display: inline-block;
+    font-size:12px;
+    margin-right:10px;
+    text-decoration:none;
+}
+
+.header a:hover{
+    color:white;
+}
+
+.container{
+    width:1226px;
+    margin:0px auto;
+}
+
+.header .menu{
+    float:left;
+    color:#b0b0b0;
+}
+
+.header .account{
+    float:right;
+    color:#b0b0b0;
+}
+
+.sub-header{
+    height:100px;
+    background-color:grey;
+}
+
+.sub-header .logo{
+    width:234px;
+    height:100px;
+    float:left;
+}
+
+.sub-header .logo a{
+    margin-top:22px;
+    display:inline-block;
+}
+
+.sub-header .logo a img{
+    height:56px;
+    width:56px;
+}
+
+.sub-header .menu_list{
+    height:100px;
+    float:left;
+    line-height:100px;
+}
+
+.sub-header a{
+    display:inline-block;
+    padding:0 10px;
+    color:#333;
+    font-size:16px;
+    text-decoration:none;
+}
+
+.sub-header a:hover{
+    color:#ff6700;
+}
+
+.sub-header .search{
+    width:234px;
+    height:100px;
+    float:right;
+    border:1px solid orange;
+}
