@@ -1,0 +1,14 @@
+这是练习开发谷歌扩展的一个版本记录
+
+帮助链接：
+HTML  https://web.dev/learn/html/
+CSS   https://web.dev/learn/css/
+JS    https://developer.mozilla.org/zh-CN/docs/Learn/JavaScript
+JavaScript API： https://developer.mozilla.org/zh-CN/docs/Web/API
+谷歌API          https://developer.chrome.com/docs/extensions/reference/
+API 完整列表      https://developer.chrome.com/docs/extensions/mv3/devguide/
+
+用户单击扩展工具栏图标时，此扩展将显示“Hello Extensions”
+
+JSON 对象描述扩展的功能和配置。例如，该"action"键声明 Chrome 应用作扩展程序的操作图标的图像
+以及单击扩展程序的操作图标时在弹出窗口中显示的 HTML 页面
