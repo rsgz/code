@@ -8,6 +8,9 @@ JavaScript API： https://developer.mozilla.org/zh-CN/docs/Web/API
 谷歌API          https://developer.chrome.com/docs/extensions/reference/
 API 完整列表      https://developer.chrome.com/docs/extensions/mv3/devguide/
 
+进入下面路径  打开开发者模式
+chrome://extensions
+
 用户单击扩展工具栏图标时，此扩展将显示“Hello Extensions”
 
 JSON 对象描述扩展的功能和配置。例如，该"action"键声明 Chrome 应用作扩展程序的操作图标的图像
