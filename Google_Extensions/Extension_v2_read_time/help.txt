@@ -10,6 +10,7 @@ JS    https://developer.mozilla.org/zh-CN/docs/Learn/JavaScript
 可选链运算符 https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Optional_chaining
 文档对象模型 https://developer.mozilla.org/zh-CN/docs/Web/API/Document_Object_Model
 JavaScript API： https://developer.mozilla.org/zh-CN/docs/Web/API
+谷歌应用商店发布   https://developer.chrome.com/docs/webstore/publish/
 谷歌API          https://developer.chrome.com/docs/extensions/reference/
 API 完整列表      https://developer.chrome.com/docs/extensions/mv3/devguide/
 npm 包chrome-types   https://www.npmjs.com/package/chrome-types
@@ -18,9 +19,14 @@ web术语   https://developer.mozilla.org/zh-CN/docs/Glossary/IDE
 清单文件  chrome-extension://YOUR_EXTENSION_ID/manifest.json
 清单格式 https://developer.chrome.com/docs/extensions/mv3/manifest/
 权限 https://developer.chrome.com/docs/extensions/mv3/declare_permissions/
-主机权限 https://developer.chrome.com/docs/extensions/mv3/match_patterns/
-内容脚本  https://developer.chrome.com/docs/extensions/mv3/content_scripts/
+主机权限     https://developer.chrome.com/docs/extensions/mv3/match_patterns/
+内容脚本     https://developer.chrome.com/docs/extensions/mv3/content_scripts/
 开发者模式   chrome://extensions
+谷歌博客     https://web.dev/blog/
+
+元素后插入节点
+insertAdjacentElement https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentElement
+Classlist属性用于将 CSS 类名添加到元素类属性中
 
 运算符与函数
 空值合并运算符（??）
